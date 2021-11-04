@@ -1,3 +1,5 @@
+#Author : Jishamol TT
+#Date :11/03/2021
 Feature: Google search functionality test
 
   Scenario: Search selenium automation in google and navigates to the selenium dev page
