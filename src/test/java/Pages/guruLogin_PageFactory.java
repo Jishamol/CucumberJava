@@ -15,14 +15,15 @@ public class guruLogin_PageFactory {
 	@FindBy(id ="passwd")
 	WebElement txt_password;
 	
-	@FindBy(id ="login")
+	@FindBy(id ="SubmitLogin")
 	WebElement bt_login;
 	
 	
 	public guruLogin_PageFactory(WebDriver driver)
 	{
 		this.driver=driver;
-		PageFactory.initElements(driver, guruLogin_PageFactory.class);
+		PageFactory.initElements(driver, this);
+
 	}
 	
 	
@@ -32,5 +33,6 @@ public class guruLogin_PageFactory {
 		txt_password.sendKeys(password);
 		bt_login.click();
 	}
+	
 
 }

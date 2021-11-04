@@ -32,14 +32,18 @@ public class guruDemoSiteLoginSteps {
 	public void user_login_with_username_and_password(String username,String password) throws InterruptedException {
 		
 		login=new guruLogin_PageFactory(driver);
-		//Thread.sleep(1000);
 		login.guruDemoLogin(username, password);
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
+		
 	}
 
 	@Then("Verify whether user logged in successfully")
-	public void verify_whether_user_logged_in_successfully() {
-	   
+	public void verify_whether_user_logged_in_successfully() throws InterruptedException {
+		
+		if (driver.getPageSource().contains("Successfully")==true)
+		{
+			System.out.println("Pass:- Successfully logged in");
+		}
 		driver.close();
 		driver.quit();
 	}
