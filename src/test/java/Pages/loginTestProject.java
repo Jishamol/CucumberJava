@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 
 public class loginTestProject {
 
-	WebDriver driver;
+	protected WebDriver driver;
 	
-	By txt_username=By.id("name");
-	By txt_password=By.id("password");
-	By btn_login=By.id("login");
-	By btn_logout=By.id("logout");
+	private By txt_username=By.id("name");
+	private By txt_password=By.id("password");
+	private By btn_login=By.id("login");
+	private By btn_logout=By.id("logout");
 	
 	public loginTestProject(WebDriver driver)
 	{
@@ -35,7 +35,12 @@ public class loginTestProject {
 	public void verifyLogoutAndClick()
 	{
 		boolean vlogout=driver.findElement(btn_logout).isDisplayed();
-		System.out.println("Logout displayed==="+vlogout);
-		driver.findElement(btn_logout).click();
+		//System.out.println("Logout displayed==="+vlogout);
+		if (vlogout==true)
+		{
+			System.out.println("Pass:- User succesfully logged into the test project page");
+			driver.findElement(btn_logout).click();
+		}
+		
 	}
 }
