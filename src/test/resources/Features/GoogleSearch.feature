@@ -2,6 +2,7 @@
 #Date :11/03/2021
 Feature: Google search functionality test
 
+@priority1
   Scenario: Search selenium automation in google and navigates to the selenium dev page
     Given Browser is open
     And User into the google page

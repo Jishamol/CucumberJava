@@ -1,166 +1,89 @@
 [
   {
-    "line": 1,
+    "line": 4,
     "elements": [
       {
-        "start_timestamp": "2021-11-03T13:48:28.054Z",
-        "line": 3,
-        "name": "Search selenium automation in google and navigates to the selenium dev page",
+        "start_timestamp": "2021-11-08T16:52:11.421Z",
+        "line": 7,
+        "name": "Title of your scenario",
         "description": "",
-        "id": "google-search-functionality-test;search-selenium-automation-in-google-and-navigates-to-the-selenium-dev-page",
+        "id": "login-featutre-with-hooks-concept;title-of-your-scenario",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3112653000,
+              "duration": 3294000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "Browser is open",
+            "line": 8,
+            "name": "Hook- Browser is open",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.browser_is_open()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_browser_is_open()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1775117000,
+              "duration": 2248000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User into the google page",
+            "line": 9,
+            "name": "Hook- User is in login page",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.user_navigates_into_the_google_page()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_user_is_in_login_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 220106000,
+              "duration": 304000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Enter the text to search",
+            "line": 10,
+            "name": "Hook- Enter username and password",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.enter_the_text_to_search()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_enter_username_and_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2713824000,
+              "duration": 353000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Click on enter key",
+            "line": 11,
+            "name": "Hook- User click on login button",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.enter_the_search_box()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_user_click_on_login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1551405000,
+              "duration": 285000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Click on selenium dev link",
+            "line": 12,
+            "name": "Hook- Verify user logged in successfully",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.click_on_selenium_dev_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 203282000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User navigates to the Selenium official site",
-            "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.user_navigates_to_the_Selenium_official_site()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_verify_user_logged_in_successfully()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HookScenario"
           }
         ]
       }
     ],
-    "name": "Google search functionality test",
+    "name": "Login featutre with hooks concept",
     "description": "",
-    "id": "google-search-functionality-test",
+    "id": "login-featutre-with-hooks-concept",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
-    "tags": []
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2021-11-03T13:48:37.719Z",
-        "line": 5,
-        "name": "Login with valid username and password",
-        "description": "",
-        "id": "login-with-username-and-password;login-with-valid-username-and-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1980000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Login page the page is open",
-            "match": {
-              "location": "ScenarioDefinitions.LoginDefinitions.login_page_the_page_is_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1572000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Enter with valid username and password",
-            "match": {
-              "location": "ScenarioDefinitions.LoginDefinitions.enter_with_valid_username_and_password()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 653000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Click on login button",
-            "match": {
-              "location": "ScenarioDefinitions.LoginDefinitions.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 247000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Logged in succesfully",
-            "match": {
-              "location": "ScenarioDefinitions.LoginDefinitions.logged_in_succesfully()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Login with username and password",
-    "description": "",
-    "id": "login-with-username-and-password",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/login.feature",
+    "uri": "file:src/test/resources/Features/loginWithHooks.feature",
     "tags": []
   }
 ]

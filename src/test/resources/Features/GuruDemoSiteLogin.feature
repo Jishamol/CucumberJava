@@ -2,6 +2,7 @@
 #Date :11/04/2021
 Feature: Check the login functionality in Guru demo site
 
+ @priority2
   Scenario Outline: Login functionality with valid credentials
     Given Guru demo site open
     #And User in demo site page
