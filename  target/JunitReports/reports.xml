@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.272">
-    <testcase classname="Login featutre with hooks concept" name="Title of your scenario" time="0.104">
-        <system-out><![CDATA[Given Hook- Browser is open.................................................passed
-And Hook- User is in login page.............................................passed
-When Hook- Enter username and password......................................passed
-And Hook- User click on login button........................................passed
-Then Hook- Verify user logged in successfully...............................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="48.864">
+    <testcase classname="Google search functionality test" name="Search selenium automation in google and navigates to the selenium dev page" time="11.149">
+        <system-out><![CDATA[Given Browser is open.......................................................passed
+And User into the google page...............................................passed
+When Enter the text to search...............................................passed
+And Click on enter key......................................................passed
+And Click on selenium dev link..............................................passed
+Then User navigates to the Selenium official site...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check the login functionality in Guru demo site" name="Login functionality with valid credentials" time="8.75">
+        <system-out><![CDATA[Given Guru demo site open...................................................passed
+When User login with test123@gmail.com and test123 and click on login.......passed
+Then Verify whether user logged in successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check the login functionality in Guru demo site" name="Login functionality with valid credentials 2" time="8.356">
+        <system-out><![CDATA[Given Guru demo site open...................................................passed
+When User login with test234@gmail.com and test234 and click on login.......passed
+Then Verify whether user logged in successfully.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality check on the test project website" name="Login with valid username and password" time="10.095">
+        <system-out><![CDATA[Given Browser should be open................................................passed
+And User navigates to the test project login page...........................passed
+When Enter Catherine and 12345 in login page................................passed
+And click on login button...................................................passed
+Then Verify user logged in..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality check on the test project website" name="Login with valid username and password 2" time="10.292">
+        <system-out><![CDATA[Given Browser should be open................................................passed
+And User navigates to the test project login page...........................passed
+When Enter Irene and 12345 in login page....................................passed
+And click on login button...................................................passed
+Then Verify user logged in..................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
