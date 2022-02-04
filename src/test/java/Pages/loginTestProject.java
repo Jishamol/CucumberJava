@@ -35,7 +35,6 @@ public class loginTestProject {
 	public void verifyLogoutAndClick()
 	{
 		boolean vlogout=driver.findElement(btn_logout).isDisplayed();
-		//System.out.println("Logout displayed==="+vlogout);
 		if (vlogout==true)
 		{
 			System.out.println("Pass:- User succesfully logged into the test project page");

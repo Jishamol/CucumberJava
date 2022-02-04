@@ -1,5 +1,6 @@
 package ScenarioDefinitions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -18,21 +19,20 @@ public class BackgroundSteps {
 	OrangeHRMWelcome HRMWelcome;
 
 	@Before
-	public void browserSetup()
-	{
+	public void browserSetup() {
 		System.out.println("Inside - Browser is open page");
-		String projectPath=System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/Drivers/chromedriver");
-		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		String projectPath = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/Drivers/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 	}
 
-	
-	  @After public void closeBrowserInstance() {
-	  System.out.println("******Inside closeBrowserInstance function********");
-	  driver.close(); driver.quit(); }
-	 
+	@After
+	public void closeBrowserInstance() {
+		System.out.println("******Inside closeBrowserInstance function********");
+		driver.close();
+		driver.quit();
+	}
 
 	@Given("User naviagtes to the HRM page")
 	public void user_naviagtes_to_the_hrm_page() throws InterruptedException {
@@ -48,7 +48,7 @@ public class BackgroundSteps {
 	public void enter_the_username_and_password() throws InterruptedException {
 
 		System.out.println("***Inside Enter the username and password**");
-		loginHRM=new loginOrangeHRM(driver);
+		loginHRM = new loginOrangeHRM(driver);
 		loginHRM.enterUername();
 		Thread.sleep(1000);
 		loginHRM.enterPassword();
@@ -68,19 +68,13 @@ public class BackgroundSteps {
 	public void user_navigates_to_the_home_page() {
 
 		System.out.println("***Inside User navigates to the home page**");
-		HRMWelcome=new OrangeHRMWelcome(driver);
+		HRMWelcome = new OrangeHRMWelcome(driver);
 
 	}
-	
-	/*
-	 * @Given("User gets logged in") public void user_gets_logged_in() {
-	 * 
-	 * System.out.println("***User gets logged in**"); }
-	 */
 
 	@When("Click on welcome link")
 	public void click_on_welcome_link() throws InterruptedException {
-		
+
 		Thread.sleep(1000);
 		System.out.println("***Inside Click on welcome link**");
 		HRMWelcome.findAndClickWelcome();
@@ -113,6 +107,5 @@ public class BackgroundSteps {
 		HRMWelcome.verifyPersonalDetails();
 		Thread.sleep(1000);
 	}
-
 
 }

@@ -1,5 +1,6 @@
 package ScenarioDefinitions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,18 +11,17 @@ import io.cucumber.java.en.*;
 
 public class GoogleSearchSteps {
 
-	WebDriver driver=null;
-
+	WebDriver driver = null;
 
 	@Given("Browser is open")
 	public void browser_is_open() {
 
 		System.out.println("Inside - Browser is open page");
-		String projectPath=System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", projectPath+"/src/test/resources/Drivers/chromedriver");
-		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		String projectPath = System.getProperty("user.dir");
+		System.setProperty("webdriver.chrome.driver", projectPath + "/src/test/resources/Drivers/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
+		// driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 
 	@And("User into the google page")
@@ -36,7 +36,6 @@ public class GoogleSearchSteps {
 	public void enter_the_text_to_search() {
 		System.out.println("Inside - Enter the text to search page");
 		driver.findElement(By.name("q")).sendKeys("Selenium Automation");
-
 
 	}
 
@@ -57,14 +56,11 @@ public class GoogleSearchSteps {
 
 	@Then("User navigates to the Selenium official site")
 	public void user_navigates_to_the_Selenium_official_site() {
-		System.out.println("Inside - User navigates to the search results page"); 
-		if (driver.getPageSource().contains("Selenium")==true)
-		{
-			System.out.println("User successfully navigates to the selenium dev page"); 
+		System.out.println("Inside - User navigates to the search results page");
+		if (driver.getPageSource().contains("Selenium") == true) {
+			System.out.println("User successfully navigates to the selenium dev page");
 		}
 		driver.close();
-		driver.quit();
 	}
-
 
 }

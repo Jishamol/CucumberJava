@@ -9,35 +9,30 @@ public class loginOrangeHRM {
 
 	WebDriver driver;
 
-	@FindBy(id="txtUsername")
+	@FindBy(id = "txtUsername")
 	WebElement txt_Username;
 
-	@FindBy(id="txtPassword")
+	@FindBy(id = "txtPassword")
 	WebElement txt_Pwd;
 
-	@FindBy(id="btnLogin")
+	@FindBy(id = "btnLogin")
 	WebElement bt_Login;
 
-	
-	public loginOrangeHRM(WebDriver driver)
-	{
-		this.driver=driver;
+	public loginOrangeHRM(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
 
-	public void enterUername()
-	{
+	public void enterUername() {
 		txt_Username.sendKeys("Admin");
 	}
-	
-	public void enterPassword()
-	{
+
+	public void enterPassword() {
 		txt_Pwd.sendKeys("admin123");
 	}
 
-	public void clickOnLogin()
-	{
+	public void clickOnLogin() {
 		bt_Login.click();
 	}
 }

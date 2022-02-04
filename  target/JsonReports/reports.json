@@ -1,13 +1,22 @@
 [
   {
-    "line": 3,
+    "line": 4,
     "elements": [
       {
-        "start_timestamp": "2022-01-10T15:35:55.714Z",
+        "start_timestamp": "2022-02-04T03:29:26.594Z",
         "before": [
           {
             "result": {
-              "duration": 2516957000,
+              "duration": 1113000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioDefinitions.HooksLoginSteps.browserSetUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5724152000,
               "status": "passed"
             },
             "match": {
@@ -15,18 +24,27 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Search selenium automation in google and navigates to the selenium dev page",
+        "line": 7,
+        "name": "Title of your scenario",
         "description": "",
-        "id": "google-search-functionality-test;search-selenium-automation-in-google-and-navigates-to-the-selenium-dev-page",
+        "id": "login-featutre-with-hooks-concept;title-of-your-scenario",
         "after": [
           {
             "result": {
-              "duration": 116224000,
+              "duration": 199700000,
               "status": "passed"
             },
             "match": {
               "location": "ScenarioDefinitions.BackgroundSteps.closeBrowserInstance()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1115000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ScenarioDefinitions.HooksLoginSteps.closeBrowserInstance()"
             }
           }
         ],
@@ -35,495 +53,277 @@
         "steps": [
           {
             "result": {
-              "duration": 1782624000,
+              "duration": 430000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Browser is open",
+            "before": [
+              {
+                "result": {
+                  "duration": 371000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 167000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps1()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "Hook- Browser is open",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.browser_is_open()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_browser_is_open()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 135000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps1()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 108000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1819649000,
+              "duration": 220000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User into the google page",
+            "before": [
+              {
+                "result": {
+                  "duration": 754000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 208000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps1()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "Hook- User is in login page",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.user_navigates_into_the_google_page()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_user_is_in_login_page()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 168000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps1()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 199000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 183263000,
+              "duration": 295000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "Enter the text to search",
+            "before": [
+              {
+                "result": {
+                  "duration": 175000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 265000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps1()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "Hook- Enter username and password",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.enter_the_text_to_search()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_enter_username_and_password()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 967000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps1()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 250000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps()"
+                }
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2444307000,
+              "duration": 285000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "Click on enter key",
-            "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.enter_the_search_box()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2039596000,
-              "status": "passed"
-            },
+            "before": [
+              {
+                "result": {
+                  "duration": 171000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 162000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps1()"
+                }
+              }
+            ],
             "line": 11,
-            "name": "Click on selenium dev link",
+            "name": "Hook- User click on login button",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.click_on_selenium_dev_link()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_user_click_on_login_button()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 162000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps1()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 146000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 189872000,
+              "duration": 160000,
               "status": "passed"
             },
+            "before": [
+              {
+                "result": {
+                  "duration": 151000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 137000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.beforeSteps1()"
+                }
+              }
+            ],
             "line": 12,
-            "name": "User navigates to the Selenium official site",
+            "name": "Hook- Verify user logged in successfully",
             "match": {
-              "location": "ScenarioDefinitions.GoogleSearchSteps.user_navigates_to_the_Selenium_official_site()"
+              "location": "ScenarioDefinitions.HooksLoginSteps.hook_verify_user_logged_in_successfully()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 540000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps1()"
+                }
+              },
+              {
+                "result": {
+                  "duration": 139000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "ScenarioDefinitions.HooksLoginSteps.afterSteps()"
+                }
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@priority1"
+            "name": "@HookScenario"
           }
         ]
       }
     ],
-    "name": "Google search functionality test",
+    "name": "Login featutre with hooks concept",
     "description": "",
-    "id": "google-search-functionality-test",
+    "id": "login-featutre-with-hooks-concept",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
-    "tags": []
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "start_timestamp": "2022-01-10T15:36:06.885Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1668761000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.browserSetup()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Login functionality with valid credentials",
-        "description": "",
-        "id": "check-the-login-functionality-in-guru-demo-site;login-functionality-with-valid-credentials;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 106709000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.closeBrowserInstance()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4101717000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Guru demo site open",
-            "match": {
-              "location": "ScenarioDefinitions.guruDemoSiteLoginSteps.guru_demo_site_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2681916000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User login with test123@gmail.com and test123 and click on login",
-            "match": {
-              "arguments": [
-                {
-                  "val": "test123@gmail.com",
-                  "offset": 16
-                },
-                {
-                  "val": "test123",
-                  "offset": 38
-                }
-              ],
-              "location": "ScenarioDefinitions.guruDemoSiteLoginSteps.user_login_with_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 183447000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Verify whether user logged in successfully",
-            "match": {
-              "location": "ScenarioDefinitions.guruDemoSiteLoginSteps.verify_whether_user_logged_in_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@priority2"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-10T15:36:15.642Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1551436000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.browserSetup()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Login functionality with valid credentials",
-        "description": "",
-        "id": "check-the-login-functionality-in-guru-demo-site;login-functionality-with-valid-credentials;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 103920000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.closeBrowserInstance()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3876280000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Guru demo site open",
-            "match": {
-              "location": "ScenarioDefinitions.guruDemoSiteLoginSteps.guru_demo_site_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2640628000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User login with test234@gmail.com and test234 and click on login",
-            "match": {
-              "arguments": [
-                {
-                  "val": "test234@gmail.com",
-                  "offset": 16
-                },
-                {
-                  "val": "test234",
-                  "offset": 38
-                }
-              ],
-              "location": "ScenarioDefinitions.guruDemoSiteLoginSteps.user_login_with_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 178304000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Verify whether user logged in successfully",
-            "match": {
-              "location": "ScenarioDefinitions.guruDemoSiteLoginSteps.verify_whether_user_logged_in_successfully()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@priority2"
-          }
-        ]
-      }
-    ],
-    "name": "Check the login functionality in Guru demo site",
-    "description": "",
-    "id": "check-the-login-functionality-in-guru-demo-site",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/GuruDemoSiteLogin.feature",
-    "tags": []
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "start_timestamp": "2022-01-10T15:36:24.005Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1554685000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.browserSetup()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Login with valid username and password",
-        "description": "",
-        "id": "login-functionality-check-on-the-test-project-website;login-with-valid-username-and-password;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 110713000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.closeBrowserInstance()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1613989000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Browser should be open",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.browser_should_be_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3114117000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User navigates to the test project login page",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.user_navigates_to_the_test_project_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 177541000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Enter Catherine and 12345 in login page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Catherine",
-                  "offset": 6
-                },
-                {
-                  "val": "12345",
-                  "offset": 20
-                }
-              ],
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.enter_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2051563000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "click on login button",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1465344000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Verify user logged in",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.verify_user_logged_in()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@priority1"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-10T15:36:34.106Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1581740000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.browserSetup()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Login with valid username and password",
-        "description": "",
-        "id": "login-functionality-check-on-the-test-project-website;login-with-valid-username-and-password;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 100822000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ScenarioDefinitions.BackgroundSteps.closeBrowserInstance()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1627589000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Browser should be open",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.browser_should_be_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3126117000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User navigates to the test project login page",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.user_navigates_to_the_test_project_login_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 179933000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "Enter Irene and 12345 in login page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Irene",
-                  "offset": 6
-                },
-                {
-                  "val": "12345",
-                  "offset": 16
-                }
-              ],
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.enter_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2059690000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "click on login button",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1611649000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Verify user logged in",
-            "match": {
-              "location": "ScenarioDefinitions.TestProjectLoginSteps.verify_user_logged_in()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@priority1"
-          }
-        ]
-      }
-    ],
-    "name": "Login functionality check on the test project website",
-    "description": "",
-    "id": "login-functionality-check-on-the-test-project-website",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/TestProjectLogin.feature",
+    "uri": "file:src/test/resources/Features/loginWithHooks.feature",
     "tags": []
   }
 ]

@@ -1,8 +1,6 @@
 #Author: Jishamol T T
 #Date : 11/10/2021
 
-@BackgroundScenario
-
 Feature: Verify login functionality with background feature
 
 Background: User gets logged in

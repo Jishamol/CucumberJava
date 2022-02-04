@@ -9,51 +9,42 @@ public class OrangeHRMWelcome {
 
 	WebDriver driver;
 
-	@FindBy(xpath="//*[@id=\"welcome\"]")
+	@FindBy(xpath = "//*[@id=\"welcome\"]")
 	WebElement lnk_welcome;
 
-	@FindBy(xpath="//*[@id=\"welcome-menu\"]/ul/li[3]/a")
+	@FindBy(xpath = "//*[@id=\"welcome-menu\"]/ul/li[3]/a")
 	WebElement lnk_logout;
 
-
-	@FindBy(xpath="//*[@id=\"menu_pim_viewMyDetails\"]/b")
+	@FindBy(xpath = "//*[@id=\"menu_pim_viewMyDetails\"]/b")
 	WebElement lnk_MyInfo;
 
-	@FindBy(xpath="//*[@id=\"sidenav\"]/li[1]/a")
+	@FindBy(xpath = "//*[@id=\"sidenav\"]/li[1]/a")
 	WebElement lnk_PDetails;
-	
 
-	public OrangeHRMWelcome(WebDriver driver)
-	{
-		this.driver=driver;
+	public OrangeHRMWelcome(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
 
-
-	public void findAndClickWelcome()
-	{
+	public void findAndClickWelcome() {
 		lnk_welcome.click();
 	}
 
-	public void verifyAndClickLogout()
-	{
-		if (lnk_logout.isDisplayed())
-		{
+	public void verifyAndClickLogout() {
+		if (lnk_logout.isDisplayed()) {
 			System.out.println("****Logout option is displayed****");
 		}
 		lnk_logout.click();
 	}
-	
-	public void viewDetails()
-	{
+
+	public void viewDetails() {
 		lnk_MyInfo.click();
 	}
 
-	public void verifyPersonalDetails()
-	{
+	public void verifyPersonalDetails() {
 		lnk_PDetails.click();
-		
+
 	}
-	
+
 }
